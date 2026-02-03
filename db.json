@@ -1,0 +1,26 @@
+{
+  "store_info": [
+    {
+      "id": 1,
+      "name": "Coffee R Us",
+      "description": "The go to store for coffee",
+      "phone_number": "555-5555"
+    }
+  ],
+  "coffee": [
+    {
+      "id": "1",
+      "name": "Vanilla bean",
+      "description": "Medium Roast, nutty flavor",
+      "origin": "Columbia",
+      "price": 10.0
+    },
+    {
+      "id": "2",
+      "name": "House Blend",
+      "description": "Dark Roast, Rich flavor",
+      "origin": "Vietnam",
+      "price": 12.0
+    }
+  ]
+}
