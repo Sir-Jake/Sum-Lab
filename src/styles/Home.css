@@ -3,18 +3,20 @@
   justify-content: center;
   align-items: center;
   height: calc(100vh - 60px); /* Adjust for nav height */
-  background-color: #8d6e53; /* Brown background from mockup */
+  background-color: #a15f24ec; /* Brown background from mockup */
   color: #1a1a1a;
   text-align: center;
 }
 
 .hero-content h1 {
+  font-style: italic;
   font-size: 4rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
 .hero-content p {
+  font-style: italic;
   font-size: 1.5rem;
   color: #e0e0e0;
 }

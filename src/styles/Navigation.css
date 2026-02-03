@@ -1,9 +1,12 @@
 .navigation {
-  background-color: #a48972; /* Lighter brown for nav */
+  background-color: #53381f;
   padding: 1rem 2rem;
   display: flex;
+  border-radius: 15px;
   justify-content: space-between;
   align-items: center;
+  max-width: 90%;
+  margin: 20px auto;
 }
 
 .nav-list {
@@ -17,12 +20,21 @@
 }
 
 .nav-list li a {
-  color: white;
+  color: #4a3b2d;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
+  background-color: #d8d2cc;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .nav-list li a:hover {
-  text-decoration: underline;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  background-color: #e6e0da;
 }

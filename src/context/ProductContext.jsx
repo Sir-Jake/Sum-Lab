@@ -73,10 +73,30 @@ export const ProductProvider = ({ children }) => {
       setError(err.message);
     }
   };
+  // Deleting a product 
+  const deleteProduct = async (id) => {
+    try {
+      const res = await fetch(`${baseUrl}/coffee/${id}`, {
+        method: "DELETE",
+      });
+      if (!res.ok) throw new Error("Failed to delete product");
+      setProducts(products.filter((p) => p.id !== id));
+    } catch (err) {
+      setError(err.message);
+    }
+  };
 
   return (
     <ProductContext.Provider
-      value={{ products, storeInfo, loading, error, addProduct, updateProduct }}
+      value={{
+        products,
+        storeInfo,
+        loading,
+        error,
+        addProduct,
+        updateProduct,
+        deleteProduct,
+      }}
     >
       {children}
     </ProductContext.Provider>

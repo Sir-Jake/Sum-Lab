@@ -34,8 +34,9 @@ function ProductForm({ onSubmit }) {
   return (
     <form className="product-form" onSubmit={handleSubmit}>
       <div className="form-group">
-        <label>Coffee Name</label>
+        <label htmlFor="name">Coffee Name</label>
         <input
+          id="name"
           type="text"
           name="name"
           value={formData.name}
@@ -45,8 +46,9 @@ function ProductForm({ onSubmit }) {
         />
       </div>
       <div className="form-group">
-        <label>Description</label>
+        <label htmlFor="description">Description</label>
         <input
+          id="description"
           type="text"
           name="description"
           value={formData.description}
@@ -56,8 +58,9 @@ function ProductForm({ onSubmit }) {
         />
       </div>
       <div className="form-group">
-        <label>Origin</label>
+        <label htmlFor="origin">Origin</label>
         <input
+          id="origin"
           type="text"
           name="origin"
           value={formData.origin}
@@ -67,8 +70,9 @@ function ProductForm({ onSubmit }) {
         />
       </div>
       <div className="form-group">
-        <label>Price</label>
+        <label htmlFor="price">Price</label>
         <input
+          id="price"
           type="number"
           name="price"
           step="0.01"

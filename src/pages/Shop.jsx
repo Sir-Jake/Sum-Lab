@@ -5,7 +5,8 @@ import "../styles/Shop.css";
 
 function Shop() {
   // Consume global state from ProductContext
-  const { products, loading, error } = useContext(ProductContext);
+  const { products, loading, error, deleteProduct } =
+    useContext(ProductContext);
   // Local state for search term
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -46,7 +47,11 @@ function Shop() {
       </div>
       <div className="product-grid">
         {filteredProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard
+            key={product.id}
+            product={product}
+            onDelete={() => deleteProduct(product.id)}
+          />
         ))}
       </div>
     </div>
